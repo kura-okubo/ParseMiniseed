@@ -9,5 +9,5 @@ This package enable to use __parsemseed()__ in [jpjones76/SeisIO.jl](https://git
 Add ParseMiniseed like so:
 
 ```julia
-julia> import Pkg; Pkg.add("https://github.com/kura-okubo/ParseMiniseed.jl")
+(v1.0) pkg> add "https://github.com/kura-okubo/ParseMiniseed.jl"
 ```
