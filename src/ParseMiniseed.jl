@@ -11,6 +11,10 @@ path = Base.source_dir()
 
 export parsemseed
 
+path = Base.source_dir()
+const datafields = [:id, :name, :loc, :fs, :gain, :resp, :units, :src, :notes, :misc, :t, :x]
+const hdrfields = [:id, :ot, :loc, :mag, :int, :mt, :np, :pax, :src, :notes, :misc]
+
 #Do not change order of list because of dependency
 
 list = ["SEED",  "SeisData", "mSEED",  "SeisHdr", "SeisChannel", "SeisEvent", "show", "sync",
