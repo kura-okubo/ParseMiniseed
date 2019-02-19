@@ -15,7 +15,8 @@ Add ParseMiniseed like so:
 ## Example
 
 ```
-using SeisRequests
+using Dates
+using SeisRequests, ParseMiniseed
 
 starttime = DateTime(2009, 12, 1, 0, 0, 0)
 endtime = DateTime(2009, 12, 2, 0, 0, 0)
