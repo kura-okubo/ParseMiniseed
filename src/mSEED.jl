@@ -387,6 +387,12 @@ function parserec!(S::SeisData, sid::IO, v::Int)
   return nothing
 end
 
+"""
+Module for Parse miniseed format for processing seismological dataset.
+All modules used in this package is copied from https://github.com/jpjones76/SeisIO.jl
+This module enables to use parsemseed function.
+2019/02/18 Kurama Okubo
+"""
 function parsemseed!(S::SeisData, sid::IO, v::Int)
   while !eof(sid)
     parserec!(S, sid, v)

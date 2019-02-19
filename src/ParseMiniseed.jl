@@ -4,7 +4,6 @@ All modules used in this package is copied from https://github.com/jpjones76/Sei
 This module enables to use parsemseed function.
 2019/02/18 Kurama Okubo
 """
-
 module ParseMiniseed
 using Dates, Printf, Blosc, Sockets
 __precompile__(true)
