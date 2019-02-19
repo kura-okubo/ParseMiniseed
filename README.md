@@ -14,8 +14,8 @@ Add ParseMiniseed like so:
 
 ## Example
 
+```
 using SeisRequests
-
 
 starttime = DateTime(2009, 12, 1, 0, 0, 0)
 endtime = DateTime(2009, 12, 2, 0, 0, 0)
@@ -25,3 +25,4 @@ data_NCEDC = get_request(req_NCEDC; server="NCEDC", verbose=false)
 
 seis_NCEDC = ParseMiniseed.SeisData()
 seis_NCEDC += parsemseed(IOBuffer(data_NCEDC.body), false, 0)[1]
+```
